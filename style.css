@@ -1,0 +1,10 @@
+h1 {
+    color: aqua;
+    font-size: 30pt;
+}
+
+#inputEmail {
+    background-color: purple;
+    width: 150px;
+    height: 70px;
+}
