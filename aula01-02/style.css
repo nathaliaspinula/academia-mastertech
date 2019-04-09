@@ -24,10 +24,17 @@ nav a:first-child {
     font-weight: bolder;
 }
 
+header {
+    height: 600px;
+    background-size: cover;
+    background-image: url("images/banner.gif");
+}
+
 section {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    height: 487px;
 }
 
 section div {
@@ -38,14 +45,13 @@ section div {
 }
 
 section div input {
-    margin-bottom: 5px;
     border: none;
 	border-bottom: 1px solid #000;
 	outline: none;
     background: transparent;
 	padding: 10px 0;
 	color: #000;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 div input:focus{
@@ -56,4 +62,27 @@ section div input:nth-child(4) {
     margin-top: 5px;
     width: 75%;
     background-color: #f5bc56ba;
- }
+}
+
+div input[type=submit]:hover {
+    font-size: 16px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19a5a0;
+}
+
+footer div {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div img {
+    width: 25px;
+    height: 25px;
+}
