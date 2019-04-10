@@ -1,35 +1,72 @@
 body {
-    margin: 0;
+    margin: auto;
     display: grid;
     grid-template-areas: "header header header header"
                          "navbar navbar navbar navbar"
                          "section section section aside"
                          "footer footer footer footer";
-    grid-template-rows: 20vh 5vh 55vh 20vh;
-    grid-gap: 10px;
+    grid-template-rows: 20vh 5vh 67vh 8vh;
+    grid-template-columns: 24.3vw 24.3vw 24.5vw 24.5vw;
+    grid-gap: 5px;
+    font-family: 'Abel', sans-serif;
 }
 
 header {
     grid-area: header;
-    background-color: pink;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-image: url("images/background.png");
+    background-size: 700px 137px;
+}
+
+header img {
+    height: 100%;
+    width: 100px;
 }
 
 nav {
     grid-area: navbar;
-    background-color: blanchedalmond;
+    background-color: #abfbeb;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    font-size: 16pt;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(223, 16, 51);
 }
 
 section {
     grid-area: section;
-    background-color: lemonchiffon;
+    background-image: url("images/banner.jpg");
+    background-size: 288px;
 }
 
 aside {
     grid-area: aside;
-    background-color: peachpuff;
+    background-image: linear-gradient(to bottom, white, rgba(241, 176, 236, 0.842));
+    text-align: center;
+    padding: 0 20px;
 }
 
 footer {
     grid-area: footer;
-    background-color: darksalmon;
+    background-color: #abfbeb;
+}
+
+footer div {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div img {
+    width: 30px;
+    height: 30px;
 }
