@@ -1,10 +1,21 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-areas: "nav nav nav nav"
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
                          "section section aside aside"
                          "footer footer footer footer";
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 50vh 10vh 60vh 20vh;
+    grid-template-columns: 25vw 24.9vw 24.9vw 24.9vw;
+}
+
+header {
+    grid-area: header;
+    background-image: url("images/nicolascagememeba.jpg");
+    background-color: rgb(96, 96, 153);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav {
@@ -12,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(151, 151, 151);
+    background-color: rgb(255, 4, 108);
 }
 
 nav a {
@@ -59,6 +70,18 @@ nav a:hover {
                              "footer footer footer footer";
         grid-template-rows: 15vh 60vh 60vh 30vh;
     }
+
+    #redesSociais {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #interacoesNico {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 425px) {
@@ -83,7 +106,23 @@ nav a:hover {
 
 section {
     grid-area: section;
-    background-color: pink;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1 {
+    font-size: 20pt;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+
+section img {
+    height: 200px;
+    border-radius: 100%;
+    
 }
 
 aside {
@@ -91,7 +130,49 @@ aside {
     background-color: red;
 }
 
+aside h2 {
+    text-align: center;
+}
+
 footer {
     grid-area: footer;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#redesSociais {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+#interacoesNico {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+footer div {
+    padding: 10px;
+    display: flex;
+}
+
+footer div a {
+    text-decoration: none;
+    color: rgb(226, 0, 0);
+    font-size: 16pt;
+}
+
+footer div a:hover {
+    font-size:20pt;
+    color: blueviolet;
+}
+footer div img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
 }
