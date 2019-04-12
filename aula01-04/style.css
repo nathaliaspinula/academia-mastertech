@@ -1,3 +1,48 @@
+@media (max-width:769px) {
+    nav a {
+        display: none;
+    }
+
+    #menuHamburguer {
+        display: flex;
+    }
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-areas: "nav nav nav nav"
+                             "section section section aside"
+                             "section section section aside"
+                             "footer footer footer footer";
+        grid-template-rows: 15vh 60vh 60vh 30vh;
+    }
+    
+    #interacoesNico {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    nav {
+        justify-content: flex-start;
+    }
+    
+    #menuHamburguer {
+        margin: 10px;
+    }
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-areas: "nav nav nav nav"
+                             "section section section section"
+                             "aside aside aside aside "
+                             "footer footer footer footer";
+        grid-template-rows: 15vh 60vh 60vh 10vh;
+    }
+}
+
 body {
     margin: 0;
     display: grid;
@@ -50,58 +95,6 @@ nav a:hover {
     height: 3px;
     background-color: black;
     border-radius: 40px;
-}
-
-@media (max-width:769px) {
-    nav a {
-        display: none;
-    }
-
-    #menuHamburguer {
-        display: flex;
-    }
-
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-areas: "nav nav nav nav"
-                             "section section section aside"
-                             "section section section aside"
-                             "footer footer footer footer";
-        grid-template-rows: 15vh 60vh 60vh 30vh;
-    }
-
-    #redesSociais {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #interacoesNico {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 425px) {
-    nav {
-        justify-content: flex-start;
-    }
-    
-    #menuHamburguer {
-        margin: 10px;
-    }
-
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-areas: "nav nav nav nav"
-                             "section section section section"
-                             "aside aside aside aside "
-                             "footer footer footer footer";
-        grid-template-rows: 15vh 60vh 60vh 10vh;
-    }
 }
 
 section {
@@ -171,6 +164,7 @@ footer div a:hover {
     font-size:20pt;
     color: blueviolet;
 }
+
 footer div img {
     width: 30px;
     height: 30px;
