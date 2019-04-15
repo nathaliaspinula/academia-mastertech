@@ -1,0 +1,18 @@
+digite seu nome
+ler nome 
+digite sua idade
+ler idade
+se idade <25 ou >55 
+    não pode
+senao
+    digite seu salario 
+    ler salario 
+    se salario < 1500
+        não pode
+    senao
+        digite meses de trabalho
+        ler tempo 
+        se tempo < 8
+            nao pode
+        senao 
+            emprestimo = 5*salario
