@@ -1,2 +1,2 @@
 # effective-waffle
-Aula 01 da Academia Mastertech.
+Aulas da Academia Mastertech.
