@@ -12,6 +12,9 @@
             {% csrf_token %}
             {{ form }}
             <button type="submit">Pedir</button>
+            {% if msg %}
+                <h1>{{ msg }}</h1>
+            {% endif %}
         </form>
     </body>
 </html>
